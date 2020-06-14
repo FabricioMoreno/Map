@@ -1,0 +1,20 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#particles-js
+{
+  background-image: url('/img-backgound.jpg');
+  position: fixed;
+  background-position: center center;
+  width: 100vw;
+  min-height: 100%;
+}
+canvas
+{
+  min-height: 100vh;
+  max-height: 100vh;
+}
+

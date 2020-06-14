@@ -1,0 +1,40 @@
+.left-menu
+{
+    display: inline-block;
+    position: absolute;
+}
+.dropdown-menu
+{
+    /* display: none; */
+    position: absolute;
+    z-index: 1;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    
+    height: 100vh;
+    background-color: white;
+
+}
+.left-menu:hover .dropdown-menu
+{
+    display: flex;
+    flex-direction: column;
+    
+}
+.btn-title
+{
+    height: 100;
+    
+}
+.point-btn
+{
+    min-height: 300px;
+}
+#point-name
+{
+    /* outline: none; */
+    outline-color: chartreuse;
+    background-color: white;
+    border: none;
+    background: transparent;
+}
