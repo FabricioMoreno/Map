@@ -1,0 +1,90 @@
+.left-menu
+{
+    display: inline-block;
+    position: absolute;
+}
+.dropdown-menu
+{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    
+    margin-left: 5px;
+
+    height: 100vh;
+    background-color: white;
+
+}
+.left-menu:hover .dropdown-menu
+{
+    display: flex;
+    flex-direction: column;
+    
+}
+.main-btn
+{
+    margin-top: 8px;
+    margin-left: 5px;
+    border: 5px solid #6d7c7b;
+    border-radius: 5px;
+    padding: 8px;
+    
+    cursor: pointer;
+    color: white;
+    background-color:#689C97 ;
+    font-size: 20px;
+    outline: none;
+    
+}
+.main-btn:hover
+{
+    background-color:#85c5bf ;
+}
+/*
+-----------------------------------------------------------
+                        STYLE EACH POINT
+----------------------------------------------------------
+*/
+.point
+{
+    min-height: 100px;
+    background-color: #D1EDE1;
+    border-top: 8px solid rgb(255, 255, 255);
+    padding-left: 8px;
+    box-sizing: border-box;
+
+}
+/* ---------------------HEADER DEL POINT-------------------*/
+.point .point-header
+{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-top: 5px;
+
+}
+.point .point-header .point-name
+{
+    border: none;
+    background: transparent;
+    outline-color: #526665;
+    font-size: 30px;
+    font-family: 'Amaranth', sans-serif;
+
+}
+
+.point .point-header #icon-write
+{
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+/* ---------------------CONTENT DEL POINT-------------------*/
+.point-content
+{
+    font-family: 'Cutive Mono', monospace;
+    font-size: 20px;
+    margin-top: 15px;
+}

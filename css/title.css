@@ -1,0 +1,13 @@
+.title
+{
+    position: absolute;
+
+    z-index: 0;
+
+    text-align: center;
+    margin: auto auto;
+
+    font-family: 'Indie Flower', cursive;
+    font-size: 300px;
+    color: white;
+}

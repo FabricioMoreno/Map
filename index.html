@@ -2,21 +2,63 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>particles.js</title>
-  <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
-  <meta name="author" content="Vincent Garreau" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <link rel="stylesheet" media="screen" href="css/style.css">
+  <title>Map</title>
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <!-- My Stylus -->
+  <link rel="stylesheet" href="./css/particle.css">
+  <link rel="stylesheet" media="screen" href="css/index.css">
+  <link rel="stylesheet" href="./css/title.css">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Amaranth&family=Cutive+Mono&display=swap" rel="stylesheet">
 </head>
-<body>
-
+<body style="height: 100%;">
 <!-- particles.js container -->
+<div id="particles-js" data-map="true">
+  <div class="left-menu">
+    <button class="main-btn">My points</button>
+    <div class="dropdown-menu">
+      <div class="point">
+        <div class="point-header">
+          <p class="point-name" id="1">Punto1</p>
+          <label for="1" id="icon-write"><i class="fas fa-pen-alt"></i></label>
+        </div>
+        <div class="point-content">
+          <p>(758px,800px)</p>
+        </div>
+      </div>
+      <div class="point">
+        <div class="point-header">
+          <input type="text" name="" class="point-name" id="2" autocomplete="off" value="Punto2">
+          <label for="2" id="icon-write"><i class="fas fa-pen-alt"></i></label>
+        </div>
+        <div class="point-content">
+          <p>(758px,800px)</p>
+        </div>
+      </div>
+      <div class="point">
+        <div class="point-header">
+          <input type="text" name="" class="point-name" id="2" autocomplete="off" value="Punto2">
+          <label for="2" id="icon-write"><i class="fas fa-pen-alt"></i></label>
+        </div>
+        <div class="point-content">
+          <p>(758px,800px)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src='https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js'></script>
 
-<div id="particles-js" data-map="true"></div>
-
+<script>
+  particlesJS.load('particles-js', './js/effects/particles.json', function() {
+    console.log('callback - particles.js config loaded');
+  });
+</script>
 <!-- effects scripts  -->
-<script src="./js/effects/particles.js-master/particles.min.js"></script>
-<script src="./js/effects/app.js"></script>
+<!-- <script src="./js/effects/particles.js-master/particles.min.js"></script>
+<script src="./js/effects/app.js"></script> -->
 
 <!-- Main program -->
 <script src="./js/app.js"></script>
