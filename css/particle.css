@@ -6,7 +6,7 @@
 }
 #particles-js
 {
-  background-image: url('/img-backgound.jpg');
+  background-image: url('../img-backgound.jpg');
   position: fixed;
   background-position: center center;
   width: 100vw;
