@@ -5,9 +5,10 @@
 }
 .dropdown-menu
 {
+    width: 350px;
     display: none;
     position: absolute;
-    z-index: 1;
+    z-index: 20;
     overflow-y: scroll;
     overflow-x: hidden;
     
@@ -16,6 +17,14 @@
     height: 100vh;
     background-color: white;
 
+}
+.dropdown-menu_title
+{
+    text-align: center;
+    color: #435e5c;
+    font-size: 40px;
+    font-family: 'Amaranth', sans-serif;
+    font-weight: bolder;
 }
 .left-menu:hover .dropdown-menu
 {

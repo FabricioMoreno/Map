@@ -1,0 +1,9 @@
+.point-graph
+{
+    position: absolute;
+    padding: 7px;
+    background: white;
+    border-radius: 50%;
+    margin-top: 10px;
+    z-index: 10;
+}
