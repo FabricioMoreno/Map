@@ -13,9 +13,9 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Amaranth&family=Cutive+Mono&display=swap" rel="stylesheet">
 </head>
-<body style="height: 100%;">
+<body>
 <!-- particles.js container -->
-<div id="particles-js" data-map="true">
+<div id="particles-js">
   <div class="left-menu">
     <button class="main-btn">My points</button>
     <div class="dropdown-menu" id="dropdown-menu">
@@ -24,18 +24,11 @@
     </div>
   </div>
 </div>
-<script src='https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js'></script>
-
-<script>
-  particlesJS.load('particles-js', './js/effects/particles.json', function() {
-    console.log('callback - particles.js config loaded');
-  });
-</script>
 <!-- effects scripts  -->
-<!-- <script src="./js/effects/particles.js-master/particles.min.js"></script>
-<script src="./js/effects/app.js"></script> -->
-
+<script src='https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js'></script>
+<script>particlesJS.load('particles-js', './js/effects/particles.json', function() {});</script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <!-- Main program -->
-<script src="./js/app.js"></script>
+<script type="module" src="./js/app.js"></script>
 </body>
 </html>
